@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    Dir.glob("@path*.mp3").map do |file| 
+    Dir.glob("#(@path)*.mp3").map do |file| 
       file.gsub("@path", "")
     end
   end 
